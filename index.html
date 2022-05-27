@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="script.js"></script>
-    </head>
 
-    <body>
-        <p id="mainAnswer"></p>
-        <p id="futureAdvice"></p>
-        <p id="luckyStar"></p>
-        <button onclick="generateWisdom()">Get Wisdom</button>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="Fortune-teller">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <button class="logo-button" onclick="reloadPage()">
+        </button>
+        <h2>Fortune favors the brave</h2>
+    </header>
+
+    <main>
+        <div class="generator">
+
+            <div class="wisdom-box">
+                <img id="coin-icon" src=" ">
+                <a class="wisdom" id="coin"></a>
+                <a class="wisdom" id="advice"><h1 id="h1-wisdom">Tashi will give a prediction for you</h1></a>
+                <a class="wisdom" id="patron"></a> 
+            </div>
+
+            <div class="tashi-box">
+                <img class="tashi" src="resources/tashi.png">
+            </div>
+
+            <div class="button">
+                <button class="ask-button" onclick="generateWisdom()">Ask Tashi</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>by Avraamos</p>
+            <p>© 2022</p>
+        </footer>
+    </main>
+</body>
+
 </html>
