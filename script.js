@@ -122,7 +122,7 @@ const roll = () => {
     document.getElementById("coin-icon").src = randomCoin.image;
     document.getElementById("coin").innerHTML = randomCoin.name;
     document.getElementById("advice").innerHTML = randomAdvice;
-    document.getElementById("patron").innerHTML = randomPatron;
+    document.getElementById("patron").innerHTML = "Crypto patron - " + randomPatron;
 }
 
 const reloadPage = () => {
